@@ -1,11 +1,11 @@
 
 body{
-    background-image: url(/background\ rose.jpg);
+    background-image: url(/images/background\ rose.jpg);
 }
 
 .tout{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
 }
 
 .recette img{
@@ -21,8 +21,7 @@ body{
 }
 
 .nbre {
-    color:red;
-
+    color:rgb(244, 28, 57);
 }
 
 .Ingredients-container .Ingredients {
@@ -36,7 +35,7 @@ body{
     padding: 5px;
 }
 
-.favorite-icon {
+.fa-regular .fa-heart {
     position: absolute;
     top: 10px;
     right: 10px;
@@ -56,4 +55,171 @@ body{
 
 .préparation:focus{
     display: block;
+}
+
+
+
+footer 
+      
+      
+ul{
+  margin-top: 20px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+ padding-top: 30px;
+ font-size: 18px;
+  color: black;
+}
+.icons{
+  display: flex;
+ margin-left: 550px;
+
+
+ 
+}  
+
+a {color: black;}
+a {font-weight: bolder;}
+
+.linkedin:hover {
+color: #04009a;
+}
+.twitter:hover {
+color: #00adb5;
+}
+.facebook:hover {
+color: blue;
+}
+
+.instagram:hover {
+color: #e11d74;
+}
+
+ol>a:hover {
+color: red;
+background-color: transparent;
+text-decoration: overline;
+}
+
+a i {
+transition: all 0.3s linear;
+}
+header {
+background-color: #ff0066; /* Couleur vive */
+padding: 10px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+/* Style du logo */
+.logo img {
+width: 100px; /* Personnalisez la taille de votre logo */
+}
+
+/* Style du menu de navigation */
+nav ul {
+list-style-type: none;
+margin: 0;
+padding: 0;
+display: flex;
+}
+
+nav li {
+margin-right: 20px;
+}
+
+/* Style du menu déroulant */
+.dropdown {
+position: relative;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #ffcc00; /* Couleur vive */
+min-width: 120px;
+border-radius: 5px;
+padding: 10px;
+z-index: 1;
+top: 100%; /* Place le menu déroulant en dessous du lien parent */
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+/* Style de la barre de recherche */
+.search input {
+padding: 5px;
+border: none;
+border-radius: 5px;
+}
+
+.search button {
+background-color: #0099ff; /* Couleur vive */
+color: white;
+border: none;
+border-radius: 5px;
+padding: 5px 10px;
+margin-left: 10px;
+}
+
+/* Style de l'icône de connexion */
+.user a {
+color: white;
+text-decoration: none;
+margin-left: 20px;
+}
+
+/* Style pour le lien "Mot de passe oublié" */
+.user a:last-child {
+color: #0099ff; /* Couleur vive */
+}
+header {
+background-color: #f26722;
+color: #fff;
+padding: 15px 0;
+text-align: center;
+}
+
+/* Style du logo */
+.logo {
+font-size: 24px;
+font-weight: bold;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+list-style-type: none;
+padding: 0;
+}
+
+.navbar li {
+display: inline;
+margin: 0 15px;
+}
+
+.navbar a {
+text-decoration: none;
+color: #fff;
+font-weight: bold;
+}
+
+/* Style de la barre de recherche */
+.search-bar {
+margin: 15px 0;
+}
+
+/* Style du bouton de connexion */
+.connexion-button {
+background-color: #009688;
+color: #fff;
+padding: 10px 20px;
+border: none;
+border-radius: 5px;
+cursor: pointer;
 }
