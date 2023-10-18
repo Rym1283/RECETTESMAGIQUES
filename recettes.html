@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recettes magiques</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/recettes.css">
+
+</head>
+<body>
+
+<section class="tout">        
+    <section class="recette">
+        <div>
+            <h2>Poulet Tikka (Inde)</h2>
+            <figure>
+                <img src="./images/poulet tikka1.jpg" width="100">
+                <span class="favorite-icon"><i class="bi bi-heart"></i></span>
+            </figure>
+        </div>
+        <div>
+            <button class="custom-button titre">Ingrédients</button>
+            <div class="nbre de pers">
+                <label for="nombre-personnes">Nbre de pers :</label>
+                <select id="nombre-personnes">
+                     <option value="2">2 pers</option>
+                     <option value="4">4 pers</option>
+                     <option value="6">6 pers</option>
+                     <option value="8">8 pers</option>
+                </select>
+             </div>
+            <article>
+                <ul class="Ingrédients">
+                    <li>1 poulet coupé en morceaux</li>
+                    <li>2 yaourts à la grecque</li>
+                    <li>1 càs de concentré de tomate</li>
+                    <li>2 ou 3 tomates fraîches</li>
+                    <li>1 oignon</li>
+                    <li>1 gousse d'ail</li>
+                    <li>2 càs d'amandes effilées</li>
+                    <li>1 càs de garam massala</li>
+                    <li>1 càs de cumin en poudre</li> 
+                    <li>1 cas de curry vert</li>
+                    <li>huile d'olive</li>
+                    <li>coriandre fraîche et sel</li>
+                </ul>
+            <button class="préparation-button titre" onclick="togglepréparation()">Préparation</button>
+                <ol class="préparation" tabindex="0">
+                    <li>Dans un cul de poule mélangez un yaourt à la gecque avec la moitié des épices et le concentré de tomates.</li>
+                    <li>Enrobez les morceaux de poulet de cette préparation et laissez macérer.</li>
+                    <li>Dans une cocotte à feu moyen, faites dorer l'oignon épluché et émincé en petits dés avec un filet d'huile d'olive pendent 10 mn.</li>
+                    <li>Ajoutez la gousse d'ail hachée, le poulet et la marinade.</li>
+                    <li>Maintenez à feu moyen pendant 20 mn en retournant les morceaux de poulet régulièrement.</li>
+                    <li>Incorporez les amandes, les tomates concassées, le reste d'épices, du sel et un petit verre d'eau si nécéssaire.</li>
+                    <li>Couvrez et laissez mijoter à nouveau 20mn. Incorporez ensuite le second yaourt afin de lier la sauce et une bonne cuillère de coriandre.</li>
+                    <li>Laissez sur feu douc 5 à 10 mn à découvert et rectifier l'assaisonnement en sel si nécéssaire.</li>
+                    <li>Servez le poulet Tikka dès l fin de la cuissson accompagné d'un riz pilaf au safran par exemple.</li>
+                </ol>
+            </article>
+        </div>
+    </section>
+
+
+    <section class="recette">
+        <div>
+            <h3>Dolma (Grèce)</h3>
+            <figure>
+                <img src="/images/dolma.jpg" alt="">
+            </figure>
+        </div>
+        <div>
+            <button class="custom-button titre">Ingrédients</button>
+            <div class="nbre de pers">
+                <label for="nombre-personnes">Nbre de pers :</label>
+                <select id="nombre-personnes">
+                     <option value="2">2 pers</option>
+                     <option value="4">4 pers</option>
+                     <option value="6">6 pers</option>
+                     <option value="8">8 pers</option>
+                </select>
+             </div>
+            <article>
+                <ul class="Ingrédients">
+                    <li>Feuilles de vignes</li>
+                    <li>1 tasse de riz à grain court</li>
+                    <li>250gr de viande hachée</li>
+                    <li>1 oignon moyen, haché finement</li>
+                    <li>2 cuillères à soupe d'huile d'olive</li>
+                    <li>1/2 cuillère à café de canelle moulue</li>
+                    <li>2 grosses c.à.s de farine</li>
+                    <li>1/2 cuillère à café de piment</li>
+                    <li>sel et poivre noir au goût</li>
+                    <li>Jus de citron et bouillon de légumes</li>
+                </ul>
+            <button class="préparation-button titre" onclick="togglepréparation()">Préparation</button>
+                <ol class="préparation" tabindex="0">
+                    <ol>
+                        <li>Dans une poêle, faites chauffer l'huile d'olive à feu moyen. Ajoutez l'oignon haché.</li>
+                        <li>Ajoutez la viande hachée à l'oignon et faites cuire jusqua ce qu'elle soit bien cuite.</li>
+                        <li>Ajoutez le riz, la canelle, la farine, le piment, le sel, le poivre et faites cuire pendant 5 mn.</li>
+                        <li>Prenez une feuille de vigne à la fois.</li>
+                        <li>Placez une petite quantité de la farce au centre de la feuille, puis roulez-la afin de former une peti paquet.</li>
+                        <li>Une fois toute les feuilles de vignes faites, disposez-les dans une grande casserole en les serrant les Dolmas les uns contre les autres.</li>
+                        <li>Versez suffisamment du jus de citron et du bouillon de légumes pour les recouvrir et laissez mijoter pendant environ 1 heure.</li>
+                        <li>Les dolmas doivent être bien tendres, laissez refroidir avant de servir.</li>
+                    </ol>
+                </article>
+            </div>
+        </div>
+
+
+    </section>
+</section>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<SCript>
+    function togglepréparation() {
+        var préparation = document.querySelector('.préparation');
+        préparation.style.display = (préparation.style.display==='none' || préparation.style.display ==='' ) ? 'block' : 'none';
+    }
+</SCript>
+
+</body>

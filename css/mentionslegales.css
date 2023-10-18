@@ -1,0 +1,77 @@
+h2 {
+    font-size: 1.625rem;
+}
+
+.texte {
+    margin-bottom: 30px!important;
+}
+
+p {
+    font-size: 1rem;
+}
+
+.mentions-titre{
+    font-size: 2.875rem;
+
+}
+
+.sub-parent {
+    width: 50rem;
+
+}
+
+body {
+    
+    
+}
+
+.parent {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+body {background-image: url(background\ rose.jpg);}
+footer 
+
+.icons{
+    display: flex;
+    margin-left: 550px
+}
+
+ul{
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 40px;
+ padding-top: 30px;
+ font-size: 18px;
+  color: black;
+}
+
+
+a {color: black;}
+a {font-weight: bolder;}
+
+.linkedin:hover {
+    color: #04009a;
+}
+.twitter:hover {
+  color: #00adb5;
+}
+.facebook:hover {
+color: blue;
+}
+
+.instagram:hover {
+color: #e11d74;
+}
+ol>a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: overline;
+  }
+  
+  
