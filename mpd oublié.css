@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins/Poppins-SemiBold.ttf');
+}
+.container {
+    margin: 0 auto ;
+    margin-top: 160px;
+    margin-right: 800px;
+    text-align: center;
+    max-width: 400px; /* Optional: Set a maximum width for the container */
+    padding: 20px; /* Optional: Add padding to the container */
+    border-style: double;
+    font-family: 'Poppins';
+}
+
+.right-background {
+    background-image: url("Images/Oh snap!.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Cover = This makes the image cover the entire div. Container = This will fit the entire image within the div */
+    background-position: right top;
+    background-attachment: scroll;
+    width: 50%;
+    height: 100vh;
+    position: fixed; /* Fix it in place so it doesn't scroll with the content */
+    top: 0;
+    right: 0;
+    z-index: -1; /* Place it behind the content */
+  }
+
+  h1 {
+    font-size: 30px
+}
+
+h1, h2 {
+    color: #405538;
+}
+
+h4 {
+    color: #E99F9F;
+}
+
+h1,h2,h4 {
+    font-family: 'Poppins';
+    text-align: center;
+}
+
+button {
+    float: center;
+    background-color: #E99F9F;
+    color: #405538;
+    width: 310px;
+    height: 45px;
+    border-radius: 12px
+}
+
+button  {
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: bold
+}
+
+button:hover {
+    background-color: #A2C19B;
+    color: #405538;
+}
+
+#Email {
+    color: #405538;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px;
+    font-family: Poppins;
+    src: url(./Poppins/Poppins-SemiBold.ttf);
+    font-size: 14px;
+}
+
+.retourne-connex {
+    color: #405538
+}
