@@ -1,6 +1,6 @@
 @font-face {
     font-family: 'Poppins';
-    src: url('./Poppins/Poppins-SemiBold.ttf');
+    src: url('../Police\ -\ Poppins/Poppins-SemiBold.ttf'); 
 }
 .container {
     margin: 0 auto ;
@@ -14,9 +14,9 @@
 }
 
 .right-background {
-    background-image: url("Images/Oh snap!.png");
+    background-image: url("../M\'s\ Images/Oh\ snap!.png");
     background-repeat: no-repeat;
-    background-size: contain; /* Cover = This makes the image cover the entire div. Container = This will fit the entire image within the div */
+    background-size: cover; /* Cover = This makes the image cover the entire div. Container = This will fit the entire image within the div */
     background-position: right top;
     background-attachment: scroll;
     width: 50%;
@@ -70,7 +70,7 @@ button:hover {
     height: 40px;
     border-radius: 12px;
     font-family: Poppins;
-    src: url(./Poppins/Poppins-SemiBold.ttf);
+    src: url(../Police\ -\ Poppins/Poppins-SemiBold.ttf);
     font-size: 14px;
 }
 
