@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recettes magiques</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./css/recettes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 
 </head>
 <body>
@@ -15,9 +16,12 @@
         <div>
             <h2>Poulet Tikka (Inde)</h2>
             <figure>
-                <img src="./images/poulet tikka1.jpg" width="100">
-                <i class="fa-regular fa-heart"></i>
+                <div class="PT">
+                <img src="./images/poulet tikka1.jpg" width="100"> 
+                    <i class="fas fa-heart favorite-icon coeur"></i>
+                </div>
             </figure>
+
         </div>
         <div>
             <button class="custom-button titre">Ingrédients</button>
@@ -45,7 +49,7 @@
                     <li>huile d'olive</li>
                     <li>coriandre fraîche et sel</li>
                 </ul>
-            <button class="préparation-button titre" onclick="togglepréparation()">Préparation</button>
+            <button class="préparation-button titre" onclick="togglepréparation(this)">Préparation</button>
                 <ol class="préparation" tabindex="0">
                     <li>Dans un cul de poule mélangez un yaourt à la gecque avec la moitié des épices et le concentré de tomates.</li>
                     <li>Enrobez les morceaux de poulet de cette préparation et laissez macérer.</li>
@@ -64,9 +68,12 @@
 
     <section class="recette">
         <div>
-            <h3>Dolma (Grèce)</h3>
+            <h2>Dolma (Grèce)</h2>
             <figure>
+                <div class="PT"></div>
                 <img src="/images/dolma.jpg" alt="">
+                    <i class="fas fa-heart favorite-icon1 coeur1"></i>
+                </div>
             </figure>
         </div>
         <div>
@@ -93,35 +100,27 @@
                     <li>sel et poivre noir au goût</li>
                     <li>Jus de citron et bouillon de légumes</li>
                 </ul>
-            <button class="préparation-button titre" onclick="togglepréparation()">Préparation</button>
+                <button class="préparation-button titre" onclick="togglepréparation(this)">Préparation</button>
                 <ol class="préparation" tabindex="0">
-                    <ol>
-                        <li>Dans une poêle, faites chauffer l'huile d'olive à feu moyen. Ajoutez l'oignon haché.</li>
-                        <li>Ajoutez la viande hachée à l'oignon et faites cuire jusqua ce qu'elle soit bien cuite.</li>
-                        <li>Ajoutez le riz, la canelle, la farine, le piment, le sel, le poivre et faites cuire pendant 5 mn.</li>
-                        <li>Prenez une feuille de vigne à la fois.</li>
-                        <li>Placez une petite quantité de la farce au centre de la feuille, puis roulez-la afin de former une peti paquet.</li>
-                        <li>Une fois toute les feuilles de vignes faites, disposez-les dans une grande casserole en les serrant les Dolmas les uns contre les autres.</li>
-                        <li>Versez suffisamment du jus de citron et du bouillon de légumes pour les recouvrir et laissez mijoter pendant environ 1 heure.</li>
-                        <li>Les dolmas doivent être bien tendres, laissez refroidir avant de servir.</li>
-                    </ol>
-                </article>
-            </div>
+                    <li>Dans une poêle, faites chauffer l'huile d'olive à feu moyen. Ajoutez l'oignon haché.</li>
+                    <li>Ajoutez la viande hachée à l'oignon et faites cuire jusqua ce qu'elle soit bien cuite.</li>
+                    <li>Ajoutez le riz, la canelle, la farine, le piment, le sel, le poivre et faites cuire pendant 5 mn.</li>
+                    <li>Prenez une feuille de vigne à la fois.</li>
+                    <li>Placez une petite quantité de la farce au centre de la feuille, puis roulez-la afin de former une peti paquet.</li>
+                    <li>Une fois toute les feuilles de vignes faites, disposez-les dans une grande casserole en les serrant les Dolmas les uns contre les autres.</li>
+                    <li>Versez suffisamment du jus de citron et du bouillon de légumes pour les recouvrir et laissez mijoter pendant environ 1 heure.</li>
+                    <li>Les dolmas doivent être bien tendres, laissez refroidir avant de servir.</li>
+                </ol>
+            </article>
         </div>
+    </div>
 
 
     </section>
 </section>
 
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
-<SCript>
-    function togglepréparation() {
-        var préparation = document.querySelector('.préparation');
-        préparation.style.display = (préparation.style.display==='none' || préparation.style.display ==='' ) ? 'block' : 'none';
-    }
-</SCript>
 
 <footer>
     
@@ -170,4 +169,18 @@
 </footer>
 
 
+<script>
+    function togglepréparation(x) {
+        console.log(x);
+        // var préparation = document.querySelector('.préparation');
+        var préparation = x.nextElementSibling ;
+        préparation.style.display = (préparation.style.display==='none' || préparation.style.display ==='' ) ? 'block' : 'none';
+    }
+    // function togglepréparation2() {
+    //     var préparation = document.querySelector('.préparation2');
+    //     préparation.style.display = (préparation.style.display==='none' || préparation.style.display ==='' ) ? 'block' : 'none';
+    // }
+</script>
+
 </body>
+</html>
