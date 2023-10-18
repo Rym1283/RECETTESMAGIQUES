@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins/Poppins-SemiBold.ttf');
+}
+h1 {
+    font-size: 200%
+}
+
+h1,h2 {
+    font-family: 'Poppins';
+    text-align: center;
+    color: #405538;
+}
+
+h4 {
+    font-family: Poppins;
+    color: #E99F9F
+}
+
+p {
+    color: #405538;
+    text-align: center;
+}
+
+#mail, #mdp {
+    float: center;
+    color: #405538;
+    font-family: 'Poppins';
+}
+/* Ça ne fait rien sur souvenir > ça a un impact uniquement sur les parties où on remplis des infos mail/mdp*/
+
+/* #souvenir {
+    float: center;
+    color: #405538;
+    font-family: 'Poppins';
+} /* Ça ne fait rien sur souvenir ***POURQUOI? - parce qu'il s'agit du texte et pas le button ? */
+
+#mail, #mdp {
+    width: 40%;
+    height: 40px;
+    border-radius: 12px;
+    font-size: 14px;
+}
+.mdp-lien {
+    color: #405538;
+}
+.compte-lien {
+    color: #405538;
+}
+button {
+    float: center;
+    background-color: #E99F9F;
+    color: #405538;
+    width: 40%;
+    height: 45px;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-size: 16px;
+    font-weight: bold
+}
+button:hover {
+    background-color: #A2C19B;
+    color: #405538;
+}
+
+
+/* Pour mettre un 'background image' qui se repète : 
+body {
+   background-image: url("Im connexion.png");
+
+}
+*/
+
+/* Pour mettre un 'background image' qui est de gauche et ne se repète pas : 
+body {
+   background-image: url("Im connexion.png");
+   background-repeat: no-repeat;
+   background-position: left top;
+}
+*/
+
+/* Pour mettre un 'background image' qui est de gauche et qui scroll avec le reste de la page : 
+body {
+    background-image: url("Im connexion.png");
+    background-repeat: no-repeat;
+    background-position: left top;
+    background-attachment: scroll;
+  }
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    /* Set a background color or image for the entire body */
+    /* background-image: url("your-background-image.png"); */
+    /* background-repeat: no-repeat; */
+    /* background-position: left top; */
+    /* background-attachment: scroll; */
+}
+
+.left-background {
+    background-image: url("Images/Im connexion.png");
+    background-repeat: no-repeat;
+    background-size: contain; /* Cover = This makes the image cover the entire div. Contain = This will fit the entire image within the div */
+    background-position: left top;
+    background-attachment: scroll;
+    width: 50%;
+    height: 100vh;
+    position: fixed; /* Fix it in place so it doesn't scroll with the content */
+    top: 0;
+    left: 0;
+    z-index: -1; /* Place it behind the content */
+  }
+
+  .container {
+    border-style: double;}
+
+    .container {
+       font-family: 'Poppins'; /* Instructions pour tout ce qui est données mail**+liens+button */
+       color: #405538; /* Il faut mettre les instructions de police ici pour le texte du Souvenir  */
+       margin: 0 auto ;
+       margin-top: 140px;
+       margin-left: 570px;
+       text-align: center;
+       max-width: 800px; /* Optional: Set a maximum width for the container */
+       padding: 20px; /* Optional: Add padding to the container */}
+
+

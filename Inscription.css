@@ -1,0 +1,103 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url('./Poppins/Poppins-SemiBold.ttf');
+}
+
+.outer-container {
+background-image: url("Images/Img fond 2 vert.png");
+background-size: contain;
+background-attachment:fixed;
+background-position: center center;
+padding: 0;
+}
+
+.inner-container {
+    font-family: 'Poppins';
+    text-align: center;
+    border-style: double;
+    margin: 0 auto ;
+    margin-top: 50;
+    text-align: center;
+    max-width: 450px;
+    padding: 0; 
+}
+/*20px est mieux ?*
+
+
+/*body {
+    background-color: #405538;
+}
+/* how to make background-colour only apply to inscription page?? */
+
+/* .outer-container {
+    background-color: #A2C19B;
+    padding: 70px;
+/* } TEST*/
+
+/* .outer-container {
+    margin: 0;
+    padding: 0;
+    /* Set a background color or image for the entire body */
+    /* Quel est l'impact de margin+padding ??????? */
+/* background-image: url("Images/Img fond 2 vert.png");
+} */ 
+
+h1 {
+    font-size: 40px
+}
+
+h1, h2 {
+    color: #405538;
+}
+
+h4, p {
+    color:  #E99F9F;
+}
+
+/* h1,h2,h4 {
+    font-family: 'Poppins';
+/* }/* pas besoin de spécifier comme c'est dans le inner container */
+
+.deja-compte, #nom, #prenom, #mail, #mdp, #confirmation {
+    color: #405538
+}
+
+#nom, #prenom, #mail, #mdp, #confirmation {
+    width: 200px;
+    height: 40px;
+    border-radius: 12px;
+    font-family: 'Poppins';
+    font-size: 12px;
+}
+
+button {
+    float: center;
+    background-color: #E99F9F;
+    color: #405538;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px
+
+}
+
+button  {
+    font-size: 16px;
+    font-weight: bold
+
+}
+
+button:hover {
+    background-color: #A2C19B;
+    color: #405538;
+    
+}
+
+
+
+
+
+
+
+
+
+
