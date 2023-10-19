@@ -62,6 +62,9 @@ nav img {
 .nav-links ul li:hover::after {
     width: 100%;
 }
+h1{
+    text-align: center;
+}
 
 /*----- Icones -----*/
 
@@ -115,7 +118,14 @@ nav img {
     border: 1px solid #70b17f;
     background: #70b17f;
     transition: 1s;
+    margin-bottom: 300px;
 
+
+}
+
+#ingredient-icons h3{
+    text-align: center;
+    margin-top: 130px;
 }
 
 
