@@ -1,4 +1,92 @@
+body {
+    background-image: url("../M\'s\ Images/Img\ fond\ 2\ vert.png");
+}
+.image-container {
+    display: flex;
+    justify-content: space-between; /* Distribute items evenly along the main axis */
+    flex-wrap: wrap; /* Allow items to wrap to the next row */
+    margin: 20px 0; /* Add spacing between rows */
+  }
+  
+  .image {
+    flex: 0 1 calc(33.33% - 20px); /* Each image takes up one-third of the container width with spacing */
+    margin: 10px; /* Add spacing between images */
+  }
+  
+  img {
+    max-width: 100%; /* Ensure images do not exceed their container width */
+  }
+  
+
 @font-face {
     font-family: 'Poppins';
-    src: url('./Police\ -\ Poppins/Poppins-SemiBold.ttf');
+    src: url('../Police\ -\ Poppins/Poppins-SemiBold.ttf');
 }
+
+h1, h2 {
+    font-family: 'Poppins';
+    text-align: center;
+   
+}
+
+h1 {
+    color: #E99F9F;
+    font-size: 300%;
+   
+}
+
+h2 {
+    color:  #405538;
+    font-size: 150%;
+   
+}
+
+footer   
+ul{
+  margin-top: 20px;
+  display: flex;
+  
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+ padding-top: 30px;
+ font-size: 18px;
+ font-family: 'Poppins';
+ color: #405538;
+  z-index: -1;
+}
+.icons{
+  display: flex;
+ margin-left: 550px;
+ z-index: -1;
+
+}  
+
+a {color:  #405538;}
+a {font-weight: bolder;}
+
+.linkedin:hover {
+color: #04009a;
+}
+.twitter:hover {
+color: #00adb5;
+}
+.facebook:hover {
+color: blue;
+}
+
+.instagram:hover {
+color: #e11d74;
+}
+
+ol>a:hover {
+color: red;
+background-color: transparent;
+text-decoration: overline;
+z-index: -1;
+}
+
+a i {
+transition: all 0.3s linear;
+}
+
