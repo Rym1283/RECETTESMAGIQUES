@@ -4,15 +4,15 @@ body{
 }
 
 .tout{
-    display: flex;
-    justify-content: space-around;
+    display:flex;
+    justify-content: space-between;
 }
 
-.recette img{
-    width: 320px;
+.mystère img{
+    width: auto;
     height: auto;
     position: relative;
-    display: inline-block;
+    
 }
 
 
