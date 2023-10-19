@@ -37,13 +37,14 @@ nav img {
 }
 
 .nav-links ul li a {
-    color:#de8781;
+    color:#405538;
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
     background-color: #629b7015;
     border-radius: 15%;
-    font-weight:bolder
+    font-weight:bolder; 
+    font-family: 'Poppins'
 }
 
 /* centrer le menu 
@@ -250,6 +251,7 @@ ul{
    padding-top: 60px;
    font-size: 18px;
     color: #405538;
+    font-family: 'Poppins'
   }
 
 a {

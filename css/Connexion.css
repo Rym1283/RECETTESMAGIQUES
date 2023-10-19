@@ -63,7 +63,8 @@
         font-weight: 400;
         background-color: #629b7015;
         border-radius: 15%;
-        font-weight:bolder
+        font-weight:bolder;
+        font-family: 'Poppins'
     }
     
     /* centrer le menu 
@@ -263,6 +264,7 @@ button:hover {
    padding-top: 10px;
    font-size: 18px;
     color: #de8781;
+    font-family: 'Poppins';
   }
 
 a {
