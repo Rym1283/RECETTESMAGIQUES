@@ -398,7 +398,54 @@ body  {font-family: Arial, Helvetica, sans-serif;
 
     }
 
+    .icons{
+        display: flex;
+       margin-left: 550px;
 
+       
+      }  
+      .icons a{
+       margin: 5px 10px;
+   }
+      .liens-footer{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+       padding-top: 30px;
+       font-size: 18px;
+        color: black;
+      list-style-type: none;
+      }
+    
+    a {
+      color: black;}
+    a {font-weight: bolder;}
+    
+    .linkedin:hover {
+      color: #04009a;
+  }
+  .twitter:hover {
+    color: #00adb5;
+}
+.facebook:hover {
+  color: blue;
+}
+
+.instagram:hover {
+  color: #e11d74;
+}
+
+.liens-footer a:hover {
+  color: red;
+  background-color: transparent;
+  text-decoration: overline;
+}
+
+a i {
+  transition: all 0.3s linear;
+}
 
     
     

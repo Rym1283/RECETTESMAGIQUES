@@ -209,6 +209,7 @@ img {
        padding-top: 30px;
        font-size: 18px;
         color: black;
+      list-style-type: none;
       }
     
     a {
