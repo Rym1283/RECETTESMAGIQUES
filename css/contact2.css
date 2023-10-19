@@ -200,6 +200,7 @@ img {
        margin: 5px 10px;
    }
       .liens-footer{
+        
         margin-top: 20px;
         display: flex;
         justify-content: space-around;
@@ -208,6 +209,7 @@ img {
        padding-top: 30px;
        font-size: 18px;
         color: black;
+      list-style-type: none;
       }
     
     a {
