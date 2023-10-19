@@ -3,6 +3,7 @@ body {
 
 }
 .header {
+    margin-top: -50px;
     max-height: 100px ;
     width: 100%;
     background-image: linear-gradient;
@@ -36,7 +37,7 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: rgb(11, 2, 5);
+    color:#de8781;
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
