@@ -115,10 +115,87 @@ nav img {
 }
 
 
+body{
+    background-image: url(./../images/background\ rose.jpg);
+}
+
+.tout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recette img{
+    width: 320px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+
+.titre {
+    background-color:rgb(244, 197, 101);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nbre {
+    color:rgb(244, 28, 57);
+}
+
+.Ingredients-container .Ingredients {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.Ingredients-container:hover .Ingredients{
+    display: block;
+    padding: 5px;
+}
+
+.favorite-icon {
+    color: red;
+    font-size: 24px;
+}
+
+.favorite-icon1 {
+    color:#9a9999;
+}
+
+.PT {
+    position: relative;
+}
+.coeur {
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.coeur1 {
+    position: absolute;
+    top : 11%;
+    left : 65% 
+}
+
+.Ingredients{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.préparation{
+    display: none;
+    text-align: justify;
+    max-width: 50% ;
+}
+
+.préparation:focus{
+    display: block;
+}
+
 
 ---footer ----- 
 
-}
+
 .Footer{
     width: 100%;
     text-align: center;

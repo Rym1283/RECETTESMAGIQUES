@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Préférences de Cookies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            background-image: url(images/background\ gris.jpg);
+         }
+        
+
+        header {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 2rem auto;
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            font-size: 24px;
+        }
+
+        h2 {
+            font-size: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 1rem;
+        }
+
+        .custom-checkbox {
+            display: inline-block;
+            position: relative;
+            padding-left: 30px;
+            cursor: pointer;
+        }
+
+        .custom-checkbox input[type="checkbox"] {
+            display: none;
+        }
+
+        .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 20px;
+            width: 20px;
+            border: 1px solid #333;
+            border-radius: 3px;
+        }
+
+        .custom-checkbox input:checked ~ .checkmark:after {
+            content: "";
+            position: absolute;
+            display: block;
+            background-color: #333;
+            height: 10px;
+            width: 10px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 2px;
+        }
+
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 1rem;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+
+        .current-preferences {
+            margin-top: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Préférences de Cookies</h1>
+    </header>
+    <div class="container">
+        <h2>Personnalisez vos préférences de cookies</h2>
+        <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site. Veuillez personnaliser vos préférences ci-dessous :</p>
+
+        <form action="#" method="post" id="cookie-preference-form">
+            <label class="custom-checkbox">
+                <input type="checkbox" name="cookiePreference" value="analytics"> Cookies d'analyse
+                <span class="checkmark"></span>
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" name="cookiePreference" value="advertising"> Cookies publicitaires
+                <span class="checkmark"></span>
+            </label>
+            <label class="custom-checkbox">
+                <input type="checkbox" name="cookiePreference" value="personalization"> Cookies de personnalisation
+                <span class="checkmark"></span>
+            </label>
+            <button type="submit" id="save-preferences-button">Sauvegarder les préférences</button>
+        </form>
+
+        <div class="current-preferences">
+            <h2>Vos préférences actuelles de cookies :</h2>
+            <p id="current-preferences">Aucune préférence sélectionnée.</p>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('cookie-preference-form');
+        const currentPreferences = document.getElementById('current-preferences');
+
+        form.addEventListener('submit', function (event) {
+            event.preventDefault();
+            const selectedPreferences = Array.from(form.elements['cookiePreference']).filter(checkbox => checkbox.checked).map(checkbox => checkbox.value);
+            currentPreferences.textContent = selectedPreferences.length > 0 ? selectedPreferences.join(', ') : 'Aucune préférence sélectionnée.';
+        });
+    </script>
+</body>
+</html>
+
+
