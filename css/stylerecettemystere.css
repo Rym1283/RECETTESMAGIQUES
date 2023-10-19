@@ -1,0 +1,97 @@
+
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+body {
+    background-image: url("../images/background vert.jpg");
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+   
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a {
+    color: rgb(184, 106, 128);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+    background-color: #629b7015;
+    border-radius: 15%;
+}
+
+
+.nav-links ul li::after {
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #de8781;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover::after {
+    width: 100%;
+}
+
+/*----- Icones -----*/
+
+.p{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 15px;
+  text-align: center;
+  font-weight: 700;
+  margin: 10% 0;
+
+}
+  
+
+.hidden-checkbox {
+    /* display:none; */
+}
+
+#ingredient-icons label {
+    display: inline-block;
+    margin: 10px;
+    cursor: pointer;
+    margin-left: 30px;
+}
+
+#ingredient-icons label img {
+    width: 100px; 
+}
+
+#ingredient-icons input[type="checkbox"]:checked + label img {
+   
+    border: 2px solid #2c140e; 
+}

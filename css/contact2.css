@@ -4,7 +4,124 @@ img {
     margin-right: auto;
     width: 50%;
     }
-    
+    * {
+      margin: 0%;
+      padding: 0%;
+      font-family: 'Poppins', sans-serif;
+  }
+  body {
+    background-size: 1650px 1100px;
+    background-image: url("../images/fondcontact.jpeg") ;
+    background-attachment: scroll;
+}
+
+  .header {
+      max-height: 100px ;
+      width: 100%;
+      background-image: linear-gradient;
+      background-position: center;
+      background-size: cover;
+      position: relative;
+  
+  }
+  
+
+  
+  nav {
+      display: flex;
+      padding: 2% 6%;
+      justify-content: space-between;
+      align-items: center;
+  }
+  
+  nav img {
+      width: 150px;
+  }
+  
+  .nav-links {
+      flex: 1;
+      text-align: right;
+  }
+  
+  .nav-links ul li {
+      list-style: none;
+      display: inline-block;
+      padding: 8px 12px;
+      position: relative;
+  }
+  
+  .nav-links ul li a {
+      color: rgb(11, 2, 5);
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 400;
+      background-color: #629b7015;
+      border-radius: 15%;
+  }
+  
+  /* centrer le menu 
+  .wrapper {
+      margin: 0 auto;
+      width: 1000px;
+  }
+  
+  .sub-menu{
+      display:none;
+  
+  }
+  */
+  .nav-links ul li::after {
+      content: '';
+      height: 2px;
+      width: 0%;
+      background: #de8781;
+      display: block;
+      margin: auto;
+      transition: 0.5s;
+  }
+  
+  .nav-links ul li:hover::after {
+      width: 100%;
+  }
+  
+  .text-box {
+      width: 90%;
+      color: black;
+      position: relative;
+      top: 50px;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+  }
+  
+  .text-box h1 {
+      font-size: 62px;
+      margin: 50px;
+      margin-top: 15%;
+  }
+  
+  .text-box p {
+      margin: 10px 150px; 
+      font-size: 15px;
+      font-weight:500; 
+      color: #2d2928;
+      background-color: rgba(241, 230, 217, 0.349);
+      border-radius: 10%;
+  }
+  
+  .bouton-catalogue {
+      display: inline-block;
+      text-decoration: none;
+      color: #281716;
+      border: 1px solid #de8781;
+      padding: 12px 34px;
+      font-size: 20px;
+      background: transparent;
+      position: relative;
+      cursor: pointer;
+      border-radius: 35%;
+      margin-top: 10%;
+  }
     
   body  {font-family: Arial, Helvetica, sans-serif;
         padding: 0px;}
@@ -46,19 +163,17 @@ img {
         padding:30px;
         width: 70%;
         /* redéfinition 400 + 2*20 */
-       
+       position: relative !important;
         margin-left: 350px;
-        margin-top: 205px;
-        margin-bottom: 50px;
+        margin-top: 20px;
+        /* margin-bottom: 50px; */
+        /* bottom :100% !important; */
       }
       h1  {
         color: #ffc800;
         width: 50%;
       }
-      body {
-        background-size: 1650px 1100px;
-         background-image: url("stock-photo-baking-and-cooking-ingredients-flour-eggs-rolling-pin-butter-and-blank-recipe-book-background-top-1927471574.jpeg") 
-    }
+     
 
       footer 
       
@@ -78,9 +193,21 @@ img {
         display: flex;
        margin-left: 550px;
 
-      
+       .icons a{
+        margin: 5px 10px;
+    }
        
       }  
+      .liens-footer{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 40px;
+       padding-top: 30px;
+       font-size: 18px;
+        color: black;
+      }
     
     a {color: black;}
     a {font-weight: bolder;}
@@ -107,122 +234,6 @@ ol>a:hover {
 
 a i {
   transition: all 0.3s linear;
-}
-header {
-  background-color: #ff0066; /* Couleur vive */
-  padding: 10px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* Style du logo */
-.logo img {
-  width: 100px; /* Personnalisez la taille de votre logo */
-}
-
-/* Style du menu de navigation */
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-}
-
-nav li {
-  margin-right: 20px;
-}
-
-/* Style du menu déroulant */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #ffcc00; /* Couleur vive */
-  min-width: 120px;
-  border-radius: 5px;
-  padding: 10px;
-  z-index: 1;
-  top: 100%; /* Place le menu déroulant en dessous du lien parent */
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-/* Style de la barre de recherche */
-.search input {
-  padding: 5px;
-  border: none;
-  border-radius: 5px;
-}
-
-.search button {
-  background-color: #0099ff; /* Couleur vive */
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 5px 10px;
-  margin-left: 10px;
-}
-
-/* Style de l'icône de connexion */
-.user a {
-  color: white;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-/* Style pour le lien "Mot de passe oublié" */
-.user a:last-child {
-  color: #0099ff; /* Couleur vive */
-}
-header {
-  background-color: #f26722;
-  color: #fff;
-  padding: 15px 0;
-  text-align: center;
-}
-
-/* Style du logo */
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-}
-
-/* Style de la barre de navigation */
-.navbar {
-  list-style-type: none;
-  padding: 0;
-}
-
-.navbar li {
-  display: inline;
-  margin: 0 15px;
-}
-
-.navbar a {
-  text-decoration: none;
-  color: #fff;
-  font-weight: bold;
-}
-
-/* Style de la barre de recherche */
-.search-bar {
-  margin: 15px 0;
-}
-
-/* Style du bouton de connexion */
-.connexion-button {
-  background-color: #009688;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
 }
 
 
