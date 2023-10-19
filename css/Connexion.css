@@ -109,15 +109,21 @@ footer
 ul{
   margin-top: 20px;
   display: flex;
-  
   align-items: center;
   justify-content: space-around;
   height: 40px;
- padding-top: 30px;
+ padding-top: 50px;
  font-size: 18px;
-  color: black;
+ font-family: 'Poppins';
+ color:  #E99F9F;;
   z-index: -1;
 }
+
+/* To make the footer move closer to the bottom of the page, you can adjust the margins and padding. Here's what you can do:
+
+Reduce the margin-top to reduce the space above the footer. You can try setting it to a smaller value, or even 0 if you want it to be closer to the bottom.
+Increase the padding-top to add space inside the footer. This will push the content downward. */
+
 .icons{
   display: flex;
  margin-left: 550px;
@@ -125,7 +131,7 @@ ul{
 
 }  
 
-a {color: black;}
+a {color:  #E99F9F;}
 a {font-weight: bolder;}
 
 .linkedin:hover {

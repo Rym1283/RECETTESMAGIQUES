@@ -92,6 +92,53 @@ button:hover {
     
 }
 
+footer   
+ul{
+  margin-top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 40px;
+ padding-top: 10px;
+ font-size: 18px;
+ font-family: 'Poppins';
+ color:  #E99F9F;;
+  z-index: -1;
+}
+.icons{
+  display: flex;
+ margin-left: 550px;
+ z-index: -1;
+
+}  
+
+a {color:   #E99F9F;}
+a {font-weight: bolder;}
+
+.linkedin:hover {
+color: #04009a;
+}
+.twitter:hover {
+color: #00adb5;
+}
+.facebook:hover {
+color: blue;
+}
+
+.instagram:hover {
+color: #e11d74;
+}
+
+ol>a:hover {
+color: red;
+background-color: transparent;
+text-decoration: overline;
+z-index: -1;
+}
+
+a i {
+transition: all 0.3s linear;
+}
 
 
 
