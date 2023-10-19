@@ -107,7 +107,11 @@ nav img {
     margin-top: 10%;
 }
   
-body  {font-family: Arial, Helvetica, sans-serif;
+body  {
+    background-image: url(./../images/background\ vert.jpg);
+        background-size: contain;
+    
+    font-family: Arial, Helvetica, sans-serif;
       padding: 0px;}
     
     input[type=text], textarea, input[type=email] {
@@ -150,4 +154,6 @@ body  {font-family: Arial, Helvetica, sans-serif;
     .politique {
         padding: 20px;
         text-align: justify;
+        
     }
+    
