@@ -57,6 +57,7 @@ img {
       font-weight: 400;
       background-color: #629b7015;
       border-radius: 15%;
+      font-weight:bolder
   }
   
   /* centrer le menu 
@@ -175,7 +176,7 @@ img {
       }
      
 
-      footer 
+      /* footer 
       
       
       ul{
@@ -188,16 +189,16 @@ img {
        padding-top: 30px;
        font-size: 18px;
         color: black;
-      }
+      } */
       .icons{
         display: flex;
        margin-left: 550px;
 
-       .icons a{
-        margin: 5px 10px;
-    }
        
       }  
+      .icons a{
+       margin: 5px 10px;
+   }
       .liens-footer{
         margin-top: 20px;
         display: flex;
@@ -209,7 +210,8 @@ img {
         color: black;
       }
     
-    a {color: black;}
+    a {
+      color: black;}
     a {font-weight: bolder;}
     
     .linkedin:hover {
@@ -226,7 +228,7 @@ img {
   color: #e11d74;
 }
 
-ol>a:hover {
+.liens-footer a:hover {
   color: red;
   background-color: transparent;
   text-decoration: overline;
@@ -235,23 +237,3 @@ ol>a:hover {
 a i {
   transition: all 0.3s linear;
 }
-
-
-
-
-    
-    
-    
-    
-    
-    
-    
-   
-    
-      
-      
-      
-      
-      
-      
-      
