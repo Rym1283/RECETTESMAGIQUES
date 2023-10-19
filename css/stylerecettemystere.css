@@ -95,3 +95,25 @@ nav img {
    
     border: 2px solid #2c140e; 
 }
+
+.bouton-magie {
+    display: inline-block;
+    text-decoration: none;
+    color: #281716;
+    border: 1px solid #de8781;
+    padding: 12px 34px;
+    font-size: 30px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 35%;
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+.bouton-magie:hover{
+    border: 1px solid #70b17f;
+    background: #70b17f;
+    transition: 1s;
+
+}
