@@ -1,4 +1,8 @@
 
+@font-face {
+    font-family: 'Poppins';
+    src: url('../Police\ -\ Poppins/Poppins-SemiBold.ttf');
+}
 
 * {
     margin: 0%;
@@ -47,7 +51,8 @@ nav img {
     font-weight: 400;
     background-color: #629b7015;
     border-radius: 15%;
-    font-weight:bolder
+    font-weight:bolder;
+    font-family: 'Poppins';
 }
 
 /* centrer le menu 
@@ -92,7 +97,8 @@ nav img {
 }
 
 .text-box p {
-    margin: 10px 150px; 
+    margin: 10px 150px;
+    font-family: 'Poppins'; 
     font-size: 15px;
     font-weight:500; 
     color: #2d2928;
@@ -212,7 +218,7 @@ h4, p {
     font-size: 12px;
 }
 
-button {
+/* button {
     float: center;
     background-color: #E99F9F;
     color: #405538;
@@ -229,6 +235,25 @@ button  {
 }
 
 button:hover {
+    background-color: #A2C19B;
+    color: #405538;
+    
+} */
+.my-submit-button {
+    float: center;
+    width: 300px;
+    height: 40px;
+    border-radius: 12px
+
+}
+
+.my-submit-button   {
+    font-size: 16px;
+    font-weight: bold
+
+}
+
+.my-submit-button:hover {
     background-color: #A2C19B;
     color: #405538;
     
