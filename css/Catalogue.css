@@ -181,52 +181,51 @@ h2 {
    
 }
 
-footer   
-ul{
-  margin-top: 20px;
-  display: flex;
-  
-  align-items: center;
-  justify-content: space-around;
-  height: 40px;
- padding-top: 30px;
- font-size: 18px;
- font-family: 'Poppins';
- color: #405538;
-  z-index: -1;
-}
 .icons{
-  display: flex;
- margin-left: 550px;
- z-index: -1;
+    display: flex;
+   margin-left: 550px;
 
-}  
+   
+  }  
+  .icons a{
+   margin: 5px 10px;
+}
+  .liens-footer{
+    list-style-type:none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+   padding-top: 10px;
+   font-size: 18px;
+    color: #de8781;
+  }
 
-a {color:  #405538;}
+a {
+  color: #de8781;}
 a {font-weight: bolder;}
 
 .linkedin:hover {
-color: #04009a;
+  color: #A2C19B;
 }
 .twitter:hover {
-color: #00adb5;
+color: #A2C19B;
 }
 .facebook:hover {
-color: blue;
+color: #A2C19B;
 }
 
 .instagram:hover {
-color: #e11d74;
+color: #A2C19B;
 }
 
-ol>a:hover {
-color: red;
+.liens-footer a:hover {
+color:#A2C19B;
 background-color: transparent;
 text-decoration: overline;
-z-index: -1;
 }
 
 a i {
 transition: all 0.3s linear;
 }
-
