@@ -1,12 +1,18 @@
-
-
 * {
     margin: 0%;
     padding: 0%;
     font-family: 'Poppins', sans-serif;
 }
 
+.header {
+    min-height: 100vh;
+    width: 100%;
+    background-image: linear-gradient;
+    background-position: center;
+    background-size: cover;
+    position: relative;
 
+}
 
 body {
     background-image: url("../images/background vert.jpg");
@@ -63,40 +69,30 @@ nav img {
     width: 100%;
 }
 
-/*----- Icones -----*/
-
-.p{
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 15px;
-  text-align: center;
-  font-weight: 700;
-  margin: 10% 0;
+.text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: black;
 
 }
-  
 
-.hidden-checkbox {
-    /* display:none; */
+.text-box h1 {
+    font-size: 62px;
 }
 
-#ingredient-icons label {
-    display: inline-block;
-    margin: 10px;
-    cursor: pointer;
-    margin-left: 30px;
+.text-box p {
+    margin: 10px 150px; 
+    font-size: 18px;
+    font-weight:500; 
+    color: #2d2928;
+    background-color: rgba(241, 230, 217, 0.349);
+    border-radius: 10%;
+    text-align: center;
+    line-height:2;
 }
 
-#ingredient-icons label img {
-    width: 100px; 
-}
-
-#ingredient-icons input[type="checkbox"]:checked + label img {
-   
-    border: 2px solid #2c140e; 
-}
-
-.bouton-magie {
+.bouton-catalogue {
     display: inline-block;
     text-decoration: none;
     color: #281716;
@@ -111,7 +107,7 @@ nav img {
     margin-bottom: 5%;
 }
 
-.bouton-magie:hover{
+.bouton-catalogue:hover{
     border: 1px solid #70b17f;
     background: #70b17f;
     transition: 1s;
@@ -119,7 +115,109 @@ nav img {
 }
 
 
-/*----- footer -----*/
+body{
+    background-image: url(./../images/background\ rose.jpg);
+}
+
+.tout{
+    display: flex;
+    justify-content: space-around;
+}
+
+.recette img{
+    width: 320px;
+    height: auto;
+    position: relative;
+    display: inline-block;
+}
+
+
+.titre {
+    background-color:rgb(244, 197, 101);
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.nbre {
+    color:rgb(244, 28, 57);
+}
+
+.Ingredients-container .Ingredients {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.Ingredients-container:hover .Ingredients{
+    display: block;
+    padding: 5px;
+}
+
+.favorite-icon {
+    color: red;
+    font-size: 24px;
+}
+
+.favorite-icon1 {
+    color:#9a9999;
+}
+
+.PT {
+    position: relative;
+}
+.coeur {
+    position: absolute;
+    top : 10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+.coeur1 {
+    position: absolute;
+    top : 11%;
+    left : 65% 
+}
+
+.Ingredients{
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.préparation{
+    display: none;
+    text-align: justify;
+    max-width: 50% ;
+}
+
+.préparation:focus{
+    display: block;
+}
+
+
+---footer ----- 
+
+
+.Footer{
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+
+}
+
+.Footer h4{
+    margin-bottom:25px;
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+
+.icons .fa{
+    color: #70b17f;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+
+
+}
 
 .icons{
     display: flex;
