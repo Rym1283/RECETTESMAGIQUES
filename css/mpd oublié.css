@@ -3,6 +3,7 @@
     src: url('../Police\ -\ Poppins/Poppins-SemiBold.ttf'); 
 }
 .header {
+    margin-top: -50px;
     max-height: 100px ;
     width: 100%;
     background-image: linear-gradient;
@@ -36,13 +37,14 @@ nav img {
 }
 
 .nav-links ul li a {
-    color: rgb(11, 2, 5);
+    color:#405538;
     text-decoration: none;
     font-size: 20px;
     font-weight: 400;
     background-color: #629b7015;
     border-radius: 15%;
-    font-weight:bolder
+    font-weight:bolder; 
+    font-family: 'Poppins'
 }
 
 /* centrer le menu 
@@ -143,7 +145,7 @@ body  {font-family: Arial, Helvetica, sans-serif;
 
 .container {
     margin: 0 auto ;
-    margin-top: 160px;
+    margin-top: 30px;
     margin-right: 800px;
     text-align: center;
     max-width: 400px; /* Optional: Set a maximum width for the container */
@@ -217,7 +219,7 @@ button:hover {
     color: #405538
 }
 
-footer   
+/* footer   
 ul{
   margin-top: 20px;
   display: flex;
@@ -229,36 +231,51 @@ ul{
  font-family: 'Poppins';
  color:#405538;
   z-index: -1;
-}
+} */
 .icons{
-  display: flex;
- margin-left: 550px;
- z-index: -1;
+    display: flex;
+   margin-left: 550px;
 
-}  
+   
+  }  
+  .icons a{
+   margin: 5px 10px;
+}
+  .liens-footer{
+    list-style-type:none;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 40px;
+   padding-top: 60px;
+   font-size: 18px;
+    color: #405538;
+    font-family: 'Poppins'
+  }
 
-a {color:  #405538;}
+a {
+  color: #405538;}
 a {font-weight: bolder;}
 
 .linkedin:hover {
-color: #04009a;
+  color:#de8781;;
 }
 .twitter:hover {
-color: #00adb5;
+color: #de8781;
 }
 .facebook:hover {
-color: blue;
+color:#de8781;
 }
 
 .instagram:hover {
-color: #e11d74;
+color: #de8781;
 }
 
-ol>a:hover {
-color: red;
+.liens-footer a:hover {
+color:#de8781;
 background-color: transparent;
 text-decoration: overline;
-z-index: -1;
 }
 
 a i {
