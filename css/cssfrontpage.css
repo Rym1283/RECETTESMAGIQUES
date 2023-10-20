@@ -416,7 +416,7 @@ transition: all 0.3s linear;
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: #333;
+    background-color: #a8c8b3f3;
     min-width: 160px;
     z-index: 1;
 }
@@ -428,9 +428,10 @@ transition: all 0.3s linear;
 .dropdown-content a {
     padding: 10px;
     display: block;
+    color: #331b26 !important;
 }
 
 .dropdown-content a:hover {
-    background-color: #555;
+    background-color: #b99999;
 }
 /* menu déroulant  */
